@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 75em;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.game-area {
+  width: 60rem;
+  margin: 3rem auto;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score {
+  font-weight: 900;
+}
+
+.result {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3rem;
+  color: crimson;
+}
+
+.choice-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice-img {
+  font-size: 10rem;
+}
+
+.choice-text {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.vs {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.restart-button-wrapper {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-choices-btns {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1.5rem 4rem;
+  background-color: crimson;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #999;
+  pointer-events: none;
+}
